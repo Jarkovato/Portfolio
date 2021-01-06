@@ -1,0 +1,88 @@
+.projects {
+  font-size: 1.6em;
+  background-color: $pantone-color;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: $white-color;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+  }
+  &__item {
+    max-width: 33.3%;
+    position: relative;
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease 0.5s;
+      z-index: 98;
+    }
+    &:hover::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.7);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    color: $white-color;
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+  }
+  &__description {
+    padding: 30px;
+    display: none;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: $white-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid $pantone-color;
+  }
+  &__link {
+    display: block;
+    font-weight: bold;
+    color: $support-color;
+    cursor: pointer;
+  }
+}
+
+.projects__item:hover .projects__description, .projects__item:hover .projects__subtitle {
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  padding: 50px 0px;
+}

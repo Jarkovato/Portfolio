@@ -1,0 +1,25 @@
+.contacts {
+  text-align: center;
+  font-size: 1.6em;
+  background-color: $pantone-color;
+  padding: 100px 0;
+  &__title {
+    color: $white-color;
+    letter-spacing: 1px;
+  }
+  &__content {
+    padding-top: 10px;
+  }
+  &__label {
+    margin-top: 10px;
+    color: $support-color;
+  }
+  &__link {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: $white-color;
+    letter-spacing: 1px;
+  }
+}

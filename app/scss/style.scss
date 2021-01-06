@@ -1,0 +1,47 @@
+// $pantone-color: #2d3033;
+$pantone-color: #353c3f;
+$support-color: #d0e1f9;
+$white-color: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  height: 100%;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: $pantone-color;
+  color: $white-color;
+  font-size: 1em;
+  border: 2px solid transparent;
+  min-width: 100px;
+  &:hover {
+    cursor: pointer;
+    background-color: $white-color;
+    color: #000;
+    border: 2px solid black;
+  }
+}
+
+
+@import "_header.scss";
+@import "_main.scss";
+@import "_projects.scss";
+@import "_contacts.scss";
+@import "_footer.scss";
+@import "_adaptive.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
