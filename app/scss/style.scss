@@ -17,6 +17,7 @@ body {
   font-family: "Open sans", sans-serif;
   font-weight: 500;
   height: 100%;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1140px;
@@ -37,6 +38,7 @@ body {
 }
 
 @import "_normalize.scss";
+@import "_animations.scss";
 @import "_header.scss";
 @import "_main.scss";
 @import "_projects.scss";
